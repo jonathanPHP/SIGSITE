@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>EJECT - Empresa Júnior da Escola de Ciências e Tecnologia.</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<link rel="stylesheet" type="text/css" href="orbit-1.2.3.css"/>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		<script type="text/javascript" src="scripts/jquery-1.5.1.min.js"></script>
+		<script type="text/javascript" src="scripts/jquery.orbit-1.2.3.min.js"></script>
+		<script type="text/javascript">
+     var x = 1;
+     function insereTexto(){
+         if(x==1){
+              document.getElementById('divTeste').innerHTML = 'TEXTO EM HTML';
+              x=0;
+          }else{
+              document.getElementById('divTeste').innerHTML = '';
+              x=1;
+         }
+     }
+</script>
+
+			<!--[if IE]>
+			     <style type="text/css">
+			         .timer { display: none !important; }
+			         div.caption { background:transparent; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);zoom: 1; }
+			    </style>
+			<![endif]-->
+		
+		<!-- Run the plugin -->
+		<script type="text/javascript">
+     $(window).load(function() {
+         $('#featured').orbit({
+              bullets: true
+         });
+     });
+</script>
+	</head>
+	<body>
+		<div id="corpo">
+		<div class="heade">
+				<div class="barra-left-heade"></div>
+				<div class="barra-heade">
+				<div class="login">	
+					<form name="login">
+						<input name="id" type="text" class="login-imput" placeholder="Usuário">
+						<input name="pass" type="password" class="login-imput" placeholder="Senha">
+						<input type="button" class="login-botao" value="entrar">
+					</form>
+					<spam style="margin-left:15px;"><a href="#">Cadastre-se</a></spam><spam style="margin-left:107px;"><a href="#">Esqueci minha senha</a></spam>
+				</div>
+					</div>
+				<div class="barra-right-heade"></div>
+		</div>
+		<div id="container">
+			<div id="header">
+				<div class="logo"><img src="imagens/logo.svg"></div>
+				<div class="lateral-header">
+						<p>SIGA-NOS:</p>
+						<div class="lateral-header-twitter"><a href="#"><img src="imagens/twitter.svg"></a></div>
+						<div class="lateral-header-facebook"><a href="#"><img src="imagens/facebook.svg"></a></div>
+						<div class="lateral-header-youtube"><a href="#"><img src="imagens/youtube.svg"></a></div>
+						<div style="clear:both"></div>
+						<div id="divBusca">
+							<img src="imagens/img-lupa.png" id="btnBusca" alt="Buscar"/>
+    						<input type="text" id="txtBusca" placeholder="Buscar..."/>
+						</div>
+				</div>
+			</div>
+			<nav id="menu">
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+					<li><a href="empresa.html">EMPRESA</a>
+					 <ul>
+                <li><a href="empresa.html">QUEM SOMOS</a></li>
+                <li><a href="membros.html">MEMBROS</a></li>
+                <li><a href="mej.html">MEJ</a></li>
+                	</ul></li>
+					<li><a href="servicos.html">SERVIÇOS</a></li>
+					<li><a href="portfolio.html">PORTFÓLIO</a></li>
+					<li><a href="novidades.html">NOVIDADES</a></li>
+					<li><a href="eventos.html">EVENTOS</a></li>
+					<li><a href="contato.html">CONTATO</a></li>
+
+    </ul>
+</nav>
+
+					</div></div>
+			<div style="clear:both;"></div>
+		<div class="footer">
+				
+					<div class="barra-footer">
+						<p>EJECT Empresa Júnior da Escola de Ciências e Tecnologia<br/>
+					     Av. Senador Salgado Filho, 3000<br/>
+						Campus Universitário, Lagoa Nova<br/>
+						CEP: 59.000-000 | Natal -RN, Brasil.</p>
+					</div>
+				
+		</div>
+	</body>
+</html>

@@ -1,0 +1,8 @@
+# Powered by Zyro.com
+ErrorDocument 401 "Unauthorized"
+ErrorDocument 403 "Forbidden"
+RewriteEngine On
+RewriteBase /
+#### PERSISTENT CONTENT ####
+DirectoryIndex index.php index.cgi index.html
+php_flag session.auto_start on

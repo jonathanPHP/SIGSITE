@@ -1,0 +1,345 @@
+/* css responsivo */
+@font-face {font-family: "NexaLight"; src: url(fonte/NexaLight.otf) format("truetype"); }
+		@font-face {font-family: "NexaBold"; src: url(fonte/NexaBold.otf) format("truetype"); }
+		@font-face {font-family: "AgencyBold"; src: url("fonte/AGENCYB.eot"); src: url("fonte/AGENCYB.ttf") format("truetype");}
+		@font-face {font-family: "AgencyLight"; src: url("fonte/AGENCYR.eot"); src: url("fonte/AGENCYR.ttf") format("truetype");}
+		@font-face {font-family: "Calibri"; src: url("fonte/calibri.eot"); src: url("fonte/calibri.ttf") format("truetype");}
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			body {
+				background: #FFFAFA;
+				font-family: Arial "Sans Serif";
+			}
+			#corpo {
+				width: 320px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			#container {
+				position:relative;
+				width:320px;
+				text-align: justify;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			/* -- Inicio barra superior e inferior -- */
+			.heade, .footer {
+				margin-left: auto;
+				margin-right: auto;
+				width:300px;
+				position:relative;
+
+			}
+			.heade {
+				display:none;
+			}
+			.footer {
+				width:320px;
+				margin-top:40px;
+				height: 100px;
+				font-family: Arial "Sans Serif";
+			}
+			.barra-heade {
+				box-shadow: 0px 0px 10px #000;
+				width:  100%;
+				background:url(imagens/teste2.png) repeat;
+				position:relative;
+				float:left;
+				color:#fff;
+				z-index:9;
+				height: 100%;
+			}
+				.barra-footer {
+				box-shadow: 0px 0px 10px #000;
+				width:  320px;
+				background:#073347;
+				position:relative;
+				float:left;
+				color:#fff;
+				z-index:9;
+				height: 100%;
+				text-align:center;
+				border-radius: 0 !important;
+			}
+			.barra-footer p{
+				font-size: 12px;
+				margin-top:12px;
+				text-shadow: 4px 3px 5px #000;
+				line-height: 15px;
+			}
+			/* -- Fim barra superior e inferior -- */
+			/* -- Inicio Cabeçalho (header) -- */
+			#header {
+				height:150px;
+				padding: 0;
+				position: relative;
+				margin-bottom: 20px;
+				margin-top: 20px;
+			}
+			.logo {
+				width:100%;
+				position: relative;
+				float: left;
+				height: 100%;
+			}
+			.logo img {
+				width:100%;
+				height: 100%;
+				position: relative;
+			}
+			/* -- inicio Lateral da header onde se encontrar a busca e rede sociais -- */
+			.lateral-header {
+				display: none;
+			}
+			/* -- Fim Lateral da header onde se encontrar a busca e rede sociais -- */
+			/* -- Fim Cabeçalho (header) -- */
+			/* -- Inicio Menu em lista principal --*/
+			#menu {
+				display: none;
+			}
+			#menu ul {
+				width: 870px;
+				list-style: none;
+				position: relative;
+				margin: 0;
+				font-size: 0px;
+				padding-top: 18px;
+			}
+			#menu ul li {
+				font-family: AgencyLight;
+				list-style: none;
+				display:inline;
+				color: #fff;
+				position:relative;
+				margin:0;
+				font-size: 20px;
+			}
+			#menu ul li a:hover{
+				box-shadow: inset 0px 5px 10px #000;
+				background: #041d2a;
+			}
+			#menu ul li a, #menu ul li a:visited, #menu ul li a:active, #menu ul li a:hover {
+				color:#fff;
+				text-decoration: none;
+				padding: 17px 36px 17px 36px;
+			}
+			.active {
+				box-shadow: inset 0px 5px 10px #000;
+				background: #041d2a;
+			}
+			/* -- Fim Menu em lista principal --*/
+			/* -- Incio Area para slide --*/
+			#banner {
+				display: none;
+			}
+			/* -- Fim Area para slide --*/
+			/* -- Inicio conteudo geral --*/
+						hr {
+				margin-top:20px;
+				margin-bottom:10px;
+			}
+			#conteudo {
+				width: 280px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+				/* Inicio css conteudo pagina index */
+			.e {
+				padding:10px;
+				width:150px;
+				height: auto;
+				position: relative;
+				float: left;
+			}
+			.e img {
+				-webkit-filter: drop-shadow(2px 2px 6px #000);
+				-moz-filter: drop-shadow(2px 2px 6px #000);
+				width:100%;
+				height: auto;
+				position: relative;
+			}
+			.sobre-eject {
+				margin-left: 10px;
+				width: 650px;
+				position: relative;
+				float: right;
+				font-family: Arial "Sans Serif";
+				padding-top:20px;
+				color: #073348;
+			}
+			.titulo {
+				background: #073348;
+				border-radius: 5px;
+				box-shadow: 1px 2px 5px #000;
+				padding: 5px 15px 5px 15px;
+				position: relative;
+				color:#fff;
+				float: left;
+				font-family: Arial "Sans Serif";
+				font-size: 14pt;
+				margin-top: 35px;
+				margin-left: 12px;
+			}
+			.novidades {
+				margin-top: 0px;
+				float: left;
+				position: relative;
+				width: 850px;
+				height: 360px;
+				padding:10px;
+			}
+			.foto-novidades {
+				margin: 5px;
+				background: #fff;
+				width:auto;
+				height: 150px;
+				box-shadow: 2px 4px 5px #666;
+			}
+			.date {
+				box-shadow: 2px 4px 5px #666;
+				margin: 5px;
+				background: #cecece;
+				width: 40px;
+				height: 80px;
+				position: relative;
+				float: left;
+				color:#073348;
+				text-align: center;
+				padding-top: 15px;
+				font-family: Arial "Sans Serif"
+			}
+			.date spam {
+				font-size: 10px;
+			}
+			.post-novidades {
+				padding: 10px;
+				position: relative;
+				float: left;
+				width: 280px;
+				line-height: 15px;
+				font-size:12px;
+				color:#073348;
+				height: auto;
+			}
+			.post-novidades h1, .recente-post-novidades h1 {
+				text-align: left;
+				font-family: Arial "Sans Serif";
+				font-size:24px;
+				color:#073348;
+				font-weight: bold;
+				line-height: 25px;
+			}
+			.post-novidades h3, .recente-post-novidades h3 {
+				font-family: Arial "Sans Serif";
+				font-size:12px;
+				color:#073348;
+				font-weight: normal;
+			}
+			.lista-post-novidades {
+				margin: 5px ;
+				width:430px;
+				height: 110px;
+			}
+			.quadrado {
+				box-shadow: 2px 4px 5px #666;
+				margin: 5px 10px 5px 5px;
+				width:95px;
+				height: 95px;
+				background: #fff;
+				float: left;
+				position: relative;
+			}
+			.recente-post-novidades {
+				margin-top: 5px;
+				margin-left: 5px;
+				float: left;
+				position: relative;
+				width: 250px;
+			}
+			.novidades-left {
+				float: left;
+				position: relative;
+				width: 360px;
+				height: 300px;
+			}
+			.novidades-right {
+				float: right;
+				position: relative;
+				width: 440px;
+				height: auto;
+			}
+			#portifolio {
+				width:100%;
+				position: relative;
+				background: #cb0000;
+				height:200px;
+			}
+			#parceiros {
+				width:100%;
+				position: relative;
+				background: #984521;
+				height:150px;
+			}
+
+				/* Fim css conteudo pagina index */
+			/* -- Fim conteudo geral --*/
+			#menu-mobile {
+				color: #fff;
+				position: relative;
+				width:220px;
+				height:60px;
+				display:block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			#menu-mobile img {
+				margin-right: 10px;
+				float: left;
+			}
+			#menu-mobile button {
+				font-size: 20px;
+				background:#073347;
+				padding: 15px 60px 15px 60px;
+				color: #fff;
+				border: none;
+				}
+			#menu-mobile button:active{
+				background:#041d2a;
+				padding: 15px 60px 15px 60px;
+				color: #fff;
+				border: none;
+				box-shadow: inset 0px 5px 10px #000;
+				font-weight: bold;
+				}
+
+
+
+
+				/*
+LEVEL ONE
+*/
+ul.dropdown { position: relative; margin:0; padding:0; }
+ul.dropdown li { float:left; padding:10px 0; font-family:Arial, Helvetica, sans-serif; font-size:15px; list-style:none; position:relative; }
+ul.dropdown li a { text-decoration:none; color:#333; background:url(bg_li.png) 0 0 no-repeat; padding:0 20px 0 23px; }
+ul.dropdown a:hover { color:#666; background:url(bg_li.png) 0 -21px no-repeat; }
+ 
+/*
+LEVEL TWO
+*/
+ul.dropdown ul { visibility: hidden; position: absolute; top: 100%; left: 0; display: block; width:200px; background:#EAEAEA; padding:5px; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; -ms-border-radius:5px; border:1px solid #D6D6D6;}
+ul.dropdown ul li { float:none; font-size:12px; border-bottom:1px solid #CCC; padding:0; }
+ul.dropdown ul li a { display:block; padding:10px 5px; background:none; }
+ul.dropdown ul li a:hover { background:#D6D6D6; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; -ms-border-radius:5px; }
+ 
+/*
+LEVEL THREE
+*/
+ul.dropdown ul ul { left: 100%; top: 0; background:#EAEAEA; }
+ul.dropdown li:hover > ul { visibility: visible; }
+
+}
